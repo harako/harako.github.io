@@ -1,0 +1,266 @@
+/*----------common----------*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Hiragino Kaku Gothic Pro', sans-serif;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  font-size: 14px;
+  color: #888;
+}
+li {
+  list-style: none;
+}
+a {
+  color: #323a45;
+  transition: all .3s;
+}
+i {
+  padding-right: 15px;
+  font-size: 18px;
+}
+
+
+.clearfix::after{
+content:"";
+display:block;
+clear:both;
+}
+
+.red{
+  color: #ff0000;
+}
+.green{
+  color:#3CB371;
+}
+
+.container {
+  width: auto;
+  padding-right: 0px;
+  padding-left: 0px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.whats-number-img{
+  width: 50px;
+  height: 50px;
+  border-radius:50%;
+}
+
+
+/*---header設定---*/
+header{
+  height: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #99CCCC;
+  line-height: 50px;
+  border-bottom: 1px solid #eee;
+  z-index: 10;
+}
+
+.header-menu{
+  width: 100%;
+  text-align: center;
+}
+.header-menu-item {
+  width: 10%;
+  text-align: center;
+  display: inline-block;
+}
+
+.header-menu li {
+  float: left;
+}
+
+.header-menu a {
+  font-weight: 700;
+  padding-left: 30px;
+}
+.header-menu a:hover {
+  color: #0dc0c0;
+  transition: color .3s;
+}
+
+.main-visual-img{
+    width: 1000px;
+    height: 300px;
+    margin: 5px;
+    padding: 5px;
+}
+/*------top-title---*/
+.main-visual{
+  margin:20px auto;
+}
+.main-viual-title h1{
+  text-align: center;
+  color:#FF3399;
+}
+.main-visual-bottom {
+  text-align: center;
+  padding:10px auto;
+}
+.main-visual-bottom a{
+  padding: 10px;
+  margin: auto;
+}
+
+/*-------what's-----*/
+.whats{
+  width:auto;
+  height: auto;
+  background-color: #FFFFBB;
+  padding: 20px 30px;
+}
+.whats-section-title{
+  margin: 20px auto;
+  color:#006600;
+}
+
+/*-------lifepass-----*/
+.lifepass{
+  width:auto;
+  height: auto;
+  padding: 20px 30px;
+}
+.lifepass-section-title{
+  margin: 20px auto;
+  color:#C71585;
+}
+.lifepass-numbers{
+  padding-bottom: 50px;
+  text-align: center;
+}
+.lifepass-number{
+  float: left;
+  width: 32%;
+  height: 300px;
+  background-color: #FFFFBB;
+  margin: 5px;
+  padding:3px;
+}
+.number-img{
+  width: 100px;
+  height: 100px;
+}
+
+
+/*---- profile ---*/
+.profile{
+  clear: left;
+  padding: 20px 30px;
+  margin-bottom: 10px;
+}
+.profile-left{
+  width:25%;
+  height: 270px;
+  padding: 10px 10px;
+  float: left;
+}
+.profile-section-title h2{
+    margin: 20px auto;
+    color:#006600;
+}
+.profile-img{
+  width: 200px;
+  height: 200px;
+  border-radius:50%;
+}
+.profile-right{
+  width:70%;
+  height: 270px;
+  padding: 20px 10px;
+  float: right;
+
+}
+
+/*----blog　.blog{}
+.blog-top{
+ clear:right;
+  background-color: #FFFFBB;
+  width: auto;
+  height: 50px;
+  padding: 10px;
+}
+一時保留---*/
+
+/*---contact----*/
+.contact-section {
+  background: url("http://switch-box.net/wp-content/uploads/2013/12/free-texture-leaf-08.jpg?5b4980");
+  background-size: cover;
+  color: white;
+  clear: left;
+}
+
+.contact-section-inner {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.contact-section h2, .contact-section h4 {
+  color: white;
+  padding: 20px 5px 20px;
+  margin-left: 20px;
+}
+
+input[type="text"], textarea {
+  margin: 0;
+  padding: 0 10px;
+  vertical-align: middle;
+  background: rgba(250, 250, 250, 0.08);
+  border: none;
+  width: 85%;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  border-radius: 0;
+  box-shadow: none;
+  transition: all .3s;
+  margin-bottom: 20px;
+  padding: 15px;
+}
+
+textarea {
+  height: 150px;
+}
+
+.contact-form {
+  display: inline-block;
+  vertical-align: top;
+  width: 80%;
+  margin: auto 25px;
+}
+
+.btn-contact {
+  font-family: 'Dosis', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  background: #0dc0c0;
+  border: 1px solid #09b1b9;
+  color: white;
+  box-shadow: inset 0 1px 0 #0fc8c8;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+  transition: all .3s;
+  margin: 15px 20px;
+  padding: 10px 25px;
+}
+
+
+/*--fotter---*/
+footer{
+  text-align: center;
+  height: 50px;
+  background-color: #99CCCC;
+  border-top: 1px solid #eee;
+
+
+}
